@@ -1,0 +1,188 @@
+<!DOCTYPE html><!---->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poyraz | Portfolyo Deneme</title>
+	<meta name="keyword" content="Portfolyo CV">
+	<meta name="description" content="Portfolyo">
+	<!--font_google-->
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=VT323&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+<style>
+  *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  a{
+	text-decoration: none;
+	color: blue;
+  }
+  html{
+	font-family: 'VT323';
+  }
+  #navbar{
+    background: #062e51;
+	color: darkgrey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.75rem;
+	height: 70px;
+
+  }
+  #navbar ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+  }
+  #navbar ul li a{
+	padding: 0.80rem;
+  }
+  #navbar ul li a:hover{
+	color: #336ea2;
+  }
+  /*Home Section*/
+  #home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+	padding: 0;
+	border-bottom: 1px solid grey;
+    background:black;
+  }
+  
+  #home .back1{
+	max-width: 100%;
+	max-height: 100%;
+	display: flex;
+  }
+  #home .back2{
+	display: none;
+  }
+  #home .name h2{
+	margin-bottom: 0.75rem;
+	letter-spacing: 1px;
+    color:darkgrey;
+    text-align: center;
+  }
+  #home .name p{
+	opacity: 0.6;
+	letter-spacing: 2px;
+    color:darkgrey;
+    text-align: center;
+  }
+  /*mobile*/
+  @media(max-width:500px){
+	#navbar{
+		background: darkorange;
+		color: orangered;
+		flex-direction: column;
+		padding-top: 0.9rem;
+		padding-bottom: 0.9rem;
+		height: 80px;
+	}
+	#navbar ul li a{
+		padding: 0.80rem;
+		color: orangered;
+	}
+	#navbar ul li a:hover{
+		color: lightgoldenrodyellow;
+	}
+	/*Home Section*/
+	#home{
+		display: flex;
+		flex-direction: column;
+		padding: 0;
+		border-bottom: 1px solid grey;
+	}
+	#home .back2{
+		max-width: 100%;
+		max-height: 100%;
+		display: flex;
+	}
+	#home .back1{
+		display: none;
+	}
+	#home .name h2{
+		margin-bottom: 0.75rem;
+		letter-spacing: 1px;
+        font-size: 1.25rem;
+	}
+	#home .name p{
+		opacity: 0.6;
+		letter-spacing: 2px;
+      	font-size: 1rem;
+	}
+    /*Text*/
+	.heading-small{
+		font-size: 1.25rem;
+	}
+	.heading-medium{
+		font-size: 1.5rem;
+	}
+	.heading-big{
+		font-size: 1.75rem;
+	}
+
+
+	/*Colors*/
+
+	.bg-dark-blue{
+		background: #062e51;
+	}
+	.bg-light-blue{
+		background: #336ea2;
+	}
+
+	/*Container*/
+	.container{
+		max-width: 1100px;
+		margin: 0 auto;
+	}
+
+	/*Buttons*//*
+	.btn{
+		margin-top: 1.25rem;
+		padding: 0.8rem 3rem;
+		border-radius: 2px;
+		letter-spacing: 0.5px;
+	}
+	.btn-primay{
+		background: #336ea2;
+	}
+	.btn-primay:hover{
+		background: #fff;
+		color: #336ea2;
+		border: 0.5px solid #336ea2;
+	}*/
+}
+
+</style>
+<body>
+	<header class="bg-dark-blue">
+		<div class="container">
+			<nav id="navbar">
+				<h1 class="heading-small">Poyraz Özbeğ</h1>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Games</a></li>
+					<li><a href="#">CV</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section id="home">
+		<img class="back1" src="https://i.pinimg.com/originals/08/4d/3d/084d3de53a1b080a4abce10610d4f2c1.gif">
+		<img class="back2" src="https://i.imgur.com/DVt1m0u.gif">
+		<div class="name">
+			<h2 class="heading-big">Poyraz Özbeğ</h2>
+			<p>Computer Engineer | Game Developer</p>
+		</div>
+	</section>
+</body>
+</html>
